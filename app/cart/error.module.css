@@ -1,0 +1,144 @@
+.container {
+  min-height: 100vh;
+  background-color: #fafafa;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.errorContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  gap: 20px;
+  text-align: center;
+}
+
+.errorTitle {
+  font-size: 24px;
+  font-weight: 600;
+  color: #000;
+  margin: 0;
+}
+
+.errorMessage {
+  font-size: 16px;
+  color: #666;
+  margin: 0;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.retryButton {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background: #000;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.retryButton:hover {
+  background: #333;
+  transform: translateY(-2px);
+}
+
+.homeButton {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.homeButton:hover {
+  background: #f5f5f5;
+  transform: translateY(-2px);
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px 16px;
+  }
+
+  .title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .errorTitle {
+    font-size: 20px;
+  }
+
+  .buttonGroup {
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .retryButton,
+  .homeButton {
+    width: 100%;
+  }
+}
+
+/* 다크 모드 */
+@media (prefers-color-scheme: dark) {
+  .container {
+    background-color: #0a0a0a;
+  }
+
+  .title {
+    color: #ededed;
+  }
+
+  .errorTitle {
+    color: #ededed;
+  }
+
+  .errorMessage {
+    color: #999;
+  }
+
+  .retryButton {
+    background: #ededed;
+    color: #000;
+  }
+
+  .retryButton:hover {
+    background: #fff;
+  }
+
+  .homeButton {
+    color: #ededed;
+    background: #1a1a1a;
+    border-color: #2a2a2a;
+  }
+
+  .homeButton:hover {
+    background: #2a2a2a;
+  }
+}
+

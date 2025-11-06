@@ -1,0 +1,103 @@
+.errorContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+.errorContent {
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+}
+
+.errorTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: var(--foreground);
+}
+
+.errorMessage {
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+  color: var(--foreground);
+  opacity: 0.8;
+  line-height: 1.6;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.retryButton {
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--background);
+  background-color: var(--foreground);
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.retryButton:hover {
+  opacity: 0.9;
+}
+
+.retryButton:active {
+  opacity: 0.8;
+}
+
+.refreshButton {
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--foreground);
+  background-color: transparent;
+  border: 2px solid var(--foreground);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.refreshButton:hover {
+  background-color: var(--foreground);
+  color: var(--background);
+}
+
+.refreshButton:active {
+  opacity: 0.8;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .errorContainer {
+    padding: 1rem;
+  }
+
+  .errorTitle {
+    font-size: 1.5rem;
+  }
+
+  .errorMessage {
+    font-size: 1rem;
+  }
+
+  .buttonGroup {
+    flex-direction: column;
+  }
+
+  .retryButton,
+  .refreshButton {
+    width: 100%;
+  }
+}
+

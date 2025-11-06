@@ -1,0 +1,137 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #fafafa;
+}
+
+.errorContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #000;
+  margin: 0;
+}
+
+.errorTitle {
+  font-size: 24px;
+  font-weight: 600;
+  color: #000;
+  margin: 0;
+}
+
+.errorMessage {
+  font-size: 16px;
+  color: #666;
+  margin: 0;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 16px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.retryButton {
+  flex: 1;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background: #000;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.retryButton:hover {
+  background: #333;
+  transform: translateY(-2px);
+}
+
+.homeButton {
+  flex: 1;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.2s;
+  text-align: center;
+}
+
+.homeButton:hover {
+  background: #f5f5f5;
+  transform: translateY(-2px);
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .title {
+    font-size: 24px;
+  }
+
+  .errorTitle {
+    font-size: 20px;
+  }
+
+  .buttonGroup {
+    flex-direction: column;
+  }
+}
+
+/* 다크 모드 */
+@media (prefers-color-scheme: dark) {
+  .container {
+    background-color: #0a0a0a;
+  }
+
+  .title {
+    color: #ededed;
+  }
+
+  .errorTitle {
+    color: #ededed;
+  }
+
+  .errorMessage {
+    color: #999;
+  }
+
+  .retryButton {
+    background: #ededed;
+    color: #000;
+  }
+
+  .retryButton:hover {
+    background: #fff;
+  }
+
+  .homeButton {
+    color: #ededed;
+    background: #1a1a1a;
+    border-color: #2a2a2a;
+  }
+
+  .homeButton:hover {
+    background: #2a2a2a;
+  }
+}
+

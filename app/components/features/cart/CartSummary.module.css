@@ -1,0 +1,81 @@
+.summary {
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.summaryRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.summaryRow:last-child {
+  border-bottom: none;
+  padding-top: 20px;
+  border-top: 2px solid #000;
+}
+
+.summaryLabel {
+  font-size: 16px;
+  font-weight: 500;
+  color: #666;
+}
+
+.summaryValue {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+}
+
+.totalPrice {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .summary {
+    padding: 20px;
+  }
+
+  .totalPrice {
+    font-size: 20px;
+  }
+}
+
+/* 다크 모드 */
+@media (prefers-color-scheme: dark) {
+  .summary {
+    background: #1a1a1a;
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.05);
+  }
+
+  .summaryRow {
+    border-bottom-color: #2a2a2a;
+  }
+
+  .summaryRow:last-child {
+    border-top-color: #ededed;
+  }
+
+  .summaryLabel {
+    color: #999;
+  }
+
+  .summaryValue {
+    color: #ededed;
+  }
+
+  .totalPrice {
+    color: #ededed;
+  }
+}
+
