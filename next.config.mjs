@@ -8,7 +8,7 @@ const nextConfig = {
       },
       {
         protocol: "https",
-        hostname: "**",
+        hostname: "app-router-api-five.vercel.app",
       },
     ],
   },

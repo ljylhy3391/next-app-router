@@ -9,12 +9,25 @@ export const metadata = {
   title: "Next X AI",
   description: "한땀 한땀 치는 시대는 끝?",
   icons: {
-    icon: "/favicon.ico", // 또는 "/icon.png", "/icon.svg" 등
+    icon: "/favicon.ico",
   },
   openGraph: {
     title: "Next X AI",
     description: "한땀 한땀 치는 시대는 끝?",
-    // images는 app/opengraph-image.png 파일이 자동으로 인식됩니다
+    images: [
+      {
+        url: "/opengraph-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Next X AI",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Next X AI",
+    description: "한땀 한땀 치는 시대는 끝?",
+    images: ["/opengraph-image.png"],
   },
 };
 
