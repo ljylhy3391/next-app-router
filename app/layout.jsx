@@ -12,8 +12,10 @@ export const metadata = {
     icon: "/favicon.ico",
   },
   openGraph: {
+    type: "website",
     title: "Next X AI",
     description: "한땀 한땀 치는 시대는 끝?",
+    siteName: "Next X AI",
     images: [
       {
         url: "/opengraph-image.png",
@@ -22,12 +24,6 @@ export const metadata = {
         alt: "Next X AI",
       },
     ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Next X AI",
-    description: "한땀 한땀 치는 시대는 끝?",
-    images: ["/opengraph-image.png"],
   },
 };
 
